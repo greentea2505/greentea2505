@@ -1,0 +1,29 @@
+-- Mengatur variabel untuk referensi bagian
+local part = script.Parent
+
+-- Mengatur fungsi untuk menangani klik
+local function onClick()
+    -- Mengubah warna bagian secara acak
+    part.BrickColor = BrickColor.Random()
+
+    -- Menampilkan pesan di output
+    print("Bagian telah diklik!")
+end
+
+-- Menambahkan event click
+part.MouseButton1Click:Connect(onClick)
+
+-- Mengatur variabel untuk referensi tombol
+local button = script.Parent
+
+-- Mengatur fungsi untuk menangani klik
+local function onClick()
+    -- Mengubah warna tombol secara acak
+    button.BackgroundColor3 = Color3.fromHSV(math.random(), 1, 1)
+
+    -- Menampilkan pesan di output
+    print("Tombol telah diklik!")
+end
+
+-- Menambahkan event click
+button.MouseButton1Click:Connect(onClick)
